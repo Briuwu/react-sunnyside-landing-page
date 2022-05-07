@@ -1,0 +1,44 @@
+.client {
+  display: grid;
+
+  padding: 3em 1em;
+
+  &-each {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+  }
+
+  &-testimonial {
+    line-height: 1.5;
+    color: $very-dark-grayish-blue;
+  }
+
+  &-name {
+    color: $very-dark-desaturated-blue;
+    margin-bottom: 0.5em;
+  }
+
+  &-job {
+    font-size: 15px;
+    color: $grayish-blue;
+  }
+
+  &-title {
+    font-family: $fraunces;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center;
+    color: $dark-grayish-blue;
+  }
+
+  &-img {
+    aspect-ratio: 1;
+    width: 3.5em;
+    border-radius: 50%;
+
+    margin-top: 3em;
+  }
+}

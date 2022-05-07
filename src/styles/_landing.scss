@@ -1,0 +1,152 @@
+.landing {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 700px) {
+  .nav {
+    padding-block: 0;
+
+    &-items {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+
+      &-each {
+        color: $white;
+        background-image: linear-gradient(to right, $white, $white);
+
+        &.contact {
+          background-color: $white;
+
+          &:hover {
+            outline: 1px solid $white;
+            background-image: none;
+          }
+        }
+
+        &:hover {
+          color: $white;
+          background-image: linear-gradient(to right, $white, $white);
+        }
+      }
+    }
+
+    &-menu {
+      display: none;
+    }
+  }
+
+  .show {
+    display: none;
+  }
+
+  .header {
+    background-image: url('../components/images/desktop/image-header.jpg');
+    background-position: center;
+
+    padding-bottom: 15.5em;
+
+    &-title {
+      padding-top: 1.5em;
+      letter-spacing: 10px;
+    }
+  }
+
+  .info {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    .switch {
+      grid-column: 2 / -1;
+      grid-row: 1;
+    }
+
+    .switch-desc {
+      grid-column: 1 / 1;
+      grid-row: 1;
+    }
+
+    &-desc {
+      text-align: left;
+      align-items: flex-start;
+      padding: 0 4em;
+    }
+
+    &-title {
+      font-size: 2.8em;
+      padding: 0;
+      width: 90%;
+    }
+
+    &-paragraph {
+      padding: 0;
+    }
+
+    &-img {
+
+      &-mobile {
+        display: none;
+      }
+
+      &-desktop {
+        display: inline-block;
+      }
+    }
+  }
+
+  .graphic {
+    background-image: url('../components/images/desktop/image-graphic-design.jpg');
+    padding-top: 20em;
+    padding-bottom: 5em;
+    width: 100%;
+
+    align-items: center;
+    text-align: center;
+
+    p {
+      font-size: $fz;
+      width: 70%;
+    }
+  }
+
+  .photography {
+    background-image: url('../components/images/desktop/image-photography.jpg');
+    padding-top: 20em;
+    padding-bottom: 5em;
+    width: 100%;
+
+    align-items: center;
+    text-align: center;
+
+    p {
+      font-size: $fz;
+      width: 70%;
+    }
+  }
+
+  .client {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 7em 5em;
+    gap: 2em;
+
+    &-title {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .photos {
+    grid-template-columns: repeat(4, 1fr);
+
+    &-each {
+
+      .mobile {
+        display: none;
+      }
+      .desktop {
+        display: inline-block;
+      }
+    }
+  }
+}
