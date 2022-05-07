@@ -7,3 +7,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 # What I learned.
+This project help me practice my skill on making a responsive website by using Grid and Flex css.
+It also help me practice my organizing skills.
