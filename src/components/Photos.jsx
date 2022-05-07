@@ -12,7 +12,7 @@ import SugarDesktop from './images/desktop/image-gallery-sugarcubes.jpg'
 
 function Photos() {
   return (
-    <section className='photos'>
+    <div className='photos'>
       <div className="photos-each">
         <img className='mobile' src={BottlesMobile} alt="" />
         <img className='desktop' src={BottlesDesktop} alt="" />
@@ -29,7 +29,7 @@ function Photos() {
         <img className='mobile' src={SugarMobile} alt="" />
         <img className='desktop' src={SugarDesktop} alt="" />
       </div>
-    </section>
+    </div>
   )
 }
 

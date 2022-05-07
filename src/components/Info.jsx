@@ -6,7 +6,7 @@ import StandOutDesktop from './images/desktop/image-stand-out.jpg'
 
 function Info() {
   return (
-    <section className='info'>
+    <div className='info'>
       <div className="info-img switch">
         <img className='info-img-mobile' src={TransformMobile} alt="" />
         <img className='info-img-desktop' src={TransformDesktop} alt="" />
@@ -33,7 +33,7 @@ function Info() {
         <p className="info-title">Photography</p>
         <p className="info-paragraph">Increase your credibility by getting the most stunning, high-quality photos that imrpove your business image.</p>
       </div>
-    </section>
+    </div>
   )
 }
 

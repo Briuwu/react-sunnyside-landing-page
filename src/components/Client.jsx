@@ -13,7 +13,7 @@ const clientImg = [
 
 function Client() {
   return (
-    <section className='client'>
+    <div className='client'>
       <p className='client-title'>CLIENT TESTIMONIALS</p>
       {clientData.map((item, index) => {
         return (
@@ -27,7 +27,7 @@ function Client() {
           </div>
         )
       })}
-    </section>
+    </div>
   )
 }
 
